@@ -1,0 +1,52 @@
+$--black: #000000;
+$--bannerColor: #adccde;
+$--welcome: #0063bf;
+
+.home_container {
+    width: 100%;
+    display: flex;
+    height: calc(100vh - 50px);
+    position: relative;
+
+    .text_container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        h2 {
+            text-transform: uppercase;
+            color: $--welcome;
+            font-size: 1.2rem;
+            letter-spacing: .5px;
+            font-weight:500;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            letter-spacing: .5px;
+            font-weight:600;
+            opacity: 83%;
+        }
+
+        p {
+            font-size: 1.2rem;
+            letter-spacing: .5px;
+            font-weight:400;
+        }
+    }
+
+    .box {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box1 {
+        background-color: $--bannerColor;
+    }
+
+    .box2 {
+        background-color: white;
+    }
+}

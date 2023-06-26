@@ -1,0 +1,83 @@
+$--color-1: #0f729d;
+$--color-2: #041655;
+$--color-3: #0e6dfb;
+
+.about_container {
+    width: 100%;
+    height: calc(100vh - 50px);
+    padding: 30px;
+
+    .box_container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .profile_picture {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(102, 195, 207);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+
+            h1 {
+                font-size: 5rem;
+                color: $--color-1;
+            }
+        }
+
+    
+        .info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+
+            big {
+                font-size: 1.5rem;
+                opacity: 90%;
+            }
+
+            p {
+                color: $--color-3;
+            }
+
+            span {
+                opacity: 70%;
+            }
+        }
+
+        .link_section {
+            a {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                transition: .5s all;
+                &:hover {
+                    color: $--color-1;
+                }
+
+                .icons {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .hidden_info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0px;
+
+        p {
+            font-size: 1.2rem;
+            text-transform: lowercase;
+            color :#626870;
+            span {
+                color :#464b51;
+            }
+        }
+    }
+}

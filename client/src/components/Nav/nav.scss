@@ -1,0 +1,75 @@
+$--black: #000000;
+$--bannerColor: #adccde;
+$--welcome: #0063bf;
+
+.active {
+    color: $--welcome;
+    opacity: 1;
+    position: relative;
+}
+
+.active::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $--welcome;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px 40px;
+    z-index: 10;
+    // overflow: hidden;
+
+    .logo_section {
+        padding-top: 5px;
+        img {
+            width: 100px;
+        }
+    }
+
+    .link_section {
+        ul {
+            display: flex;
+            gap: 20px;
+
+            li {
+                display: inline-block;
+
+                a {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    position: relative;
+                    transition: .5s all;
+                }
+
+                a::before {
+                    content: "";
+                    width: 0%;
+                    height: 2px;
+                    background-color: $--welcome;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transition: .5s all;
+                }
+
+                a:hover {
+                    color: #0063bf;
+                }
+
+                a:hover::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
